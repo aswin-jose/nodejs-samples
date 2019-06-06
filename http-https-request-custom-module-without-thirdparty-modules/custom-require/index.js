@@ -60,12 +60,6 @@ module.exports = (options, callback) => {
         req.write(JSON.stringify(options.body));
     }
 
-<<<<<<< HEAD
     req.end();
 
 };
-=======
-    // let request=require("request");
-    // request(options,callback);
-};
->>>>>>> 26e69879c7b8bc7e77ee21865926993102750c14
