@@ -18,7 +18,7 @@ module.exports = (options, callback) => {
                     requestProtocol = require("http");
                     break;
                 case "https:":
-                    requestProtocol = require("http");
+                    requestProtocol = require("https");
                     break;
                 default:
                     requestProtocol = undefined;
