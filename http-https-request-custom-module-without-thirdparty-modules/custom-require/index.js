@@ -47,7 +47,12 @@ module.exports = (options, callback) => {
         });
 
         res.on('end', () => {
-            callback(false, res, JSON.parse(dataResponse));
+            if (options.json == true){
+                callback(false, res, JSON.parse(dataResponse)); // To do handle return based on types.
+            } else{
+                callback(false, res, dataResponse); // To do handle return based on types.
+            }
+
         });
 
     });
